@@ -51,11 +51,10 @@ def create_app(config_name):
     except Exception as e:
       print('')
       print('An error occurred initalizing the app. Be sure to set the environment')
-      print('variables FLASK_ENV=(development|production) and FLASK_APP=application.py')
+      print('variables FLASK_ENV=(development|production) and FLASK_APP=application_name.py')
       print('')
       raise e
     
-
     from app.landing import landing_bp
     app.register_blueprint(landing_bp)
 

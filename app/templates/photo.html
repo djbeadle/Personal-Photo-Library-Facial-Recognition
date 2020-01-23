@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ content }}
+<br>
+<img src="{{ url_for('landing_bp.get_photo', file_oid=file_oid) }}">
+{% endblock %}
